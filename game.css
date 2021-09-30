@@ -123,6 +123,16 @@ body {
     display: inline;
 }
 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: black;
+    transition: color 1s ease;
+}
+
 @media (max-width: 688px) {
     .themes-container p {
         display: block;
