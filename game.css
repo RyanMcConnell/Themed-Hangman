@@ -1,0 +1,130 @@
+
+/* ADD MEDIA QUERIES SO THAT PADDING-LEFT OF CORRECT ANSWER CONTAINER SHRINKS AND THEN CONTAINER GOES ABOVE 
+INCORRECT GUESSSES
+*/
+
+body {
+    background: rgb(253,197,245);
+    background: linear-gradient(90deg, rgba(253,197,245,1) 14%, rgba(179,136,235,1) 37%, rgba(128,147,241,1) 63%, rgba(114,221,247,1) 86%);
+    font-family: 'Yeon Sung', cursive;
+    font-size: 0.8em;
+    margin-bottom: 100px;
+    color: #fbfcff;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 3px black;
+}
+
+.introduction-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.introduction-author {
+    margin-top: 0;
+}
+
+.hangman-container {
+    height: 250px;
+    text-align: center;
+}
+
+.hangman-picture {
+    height: 100%;
+}
+
+.letters {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.5em;
+    margin: 7px;
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    box-shadow: 1px 3px black;
+    color: white;
+    border: 2px solid black;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+} 
+
+.word-container {
+    text-align: center;
+}
+
+.themes-container {
+    text-align: center;
+}
+
+.themes-container p {
+    display: inline;
+    font-size: 2em;
+}
+
+.correct-list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.correct-answers {
+    display: inline-block;
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 3em;
+    list-style-type: none;
+}
+
+.incorrect-answers {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.incorrect-container {
+    text-align: center;
+    margin: 0 auto;
+    height: 5vh
+}
+
+.movieThemeStyle {
+    background: rgb(27,231,255);
+    background: linear-gradient(90deg, rgba(27,231,255,1) 14%, rgba(110,235,131,1) 32%, rgba(228,255,26,1) 50%, rgba(255,184,0,1) 68%, rgba(255,87,20,1) 86%);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    height: 50px;
+    width: 100%;
+    background-color: grey;
+    border-top: 2px solid black;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer-element {
+    display: inline;
+}
+
+@media (max-width: 688px) {
+    .themes-container p {
+        display: block;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link href="game.css" rel="stylesheet">
+    <title>Hangman by Ryan McConnell</title>
+</head>
+
+<body>
+
+    <div class="introduction">
+        <h1 class="introduction-title">Hangman - Original!</h1>
+        <p class="introduction-author">Created by: Ryan McConnell</p>
+    </div>
+
+    <div class="hangman-container">
+        <img src="photos/hangman-game-0.png" class="hangman-picture">
+    </div>
+
+    <ul class="correct-list">
+        <!--WHERE THE CORRECT ANSWERS WILL GO-->
+        <li class="correct-answers default-template">N/A</li>
+    </ul>
+
+    <div>
+        <h2 class="incorrect-container">Incorrect Guesses: <span class="guess-counter">
+                <!--SCORE TRACKER GOES HERE!-->
+            </span></h2>
+        <h3 class="incorrect-answers">
+            <!--INCORRECT GUESSES WILL GO HERE! -->
+        </h3>
+    </div>
+
+    <div class="letters">
+        <!--BUTTONS-->
+        <button class="btn letter" id="btnA" value="A" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">A</button>
+        <button class="btn letter" id="btnB" value="B" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">B</button>
+        <button class="btn letter" id="btnC" value="C" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">C</button>
+        <button class="btn letter" id="btnD" value="D" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">D</button>
+        <button class="btn letter" id="btnE" value="E" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">E</button>
+        <button class="btn letter" id="btnF" value="F" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">F</button>
+        <button class="btn letter" id="btnG" value="G" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">G</button>
+        <button class="btn letter" id="btnH" value="H" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">H</button>
+        <button class="btn letter" id="btnI" value="I" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">I</button>
+        <button class="btn letter" id="btnJ" value="J" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">J</button>
+        <button class="btn letter" id="btnK" value="K" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">K</button>
+        <button class="btn letter" id="btnL" value="L" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">L</button>
+        <button class="btn letter" id="btnM" value="M" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">M</button>
+        <button class="btn letter" id="btnN" value="N" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">N</button>
+        <button class="btn letter" id="btnO" value="O" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">O</button>
+        <button class="btn letter" id="btnP" value="P" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">P</button>
+        <button class="btn letter" id="btnQ" value="Q" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Q</button>
+        <button class="btn letter" id="btnR" value="R" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">R</button>
+        <button class="btn letter" id="btnS" value="S" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">S</button>
+        <button class="btn letter" id="btnT" value="T" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">T</button>
+        <button class="btn letter" id="btnU" value="U" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">U</button>
+        <button class="btn letter" id="btnV" value="V" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">V</button>
+        <button class="btn letter" id="btnW" value="W" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">W</button>
+        <button class="btn letter" id="btnX" value="X" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">X</button>
+        <button class="btn letter" id="btnY" value="Y" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Y</button>
+        <button class="btn letter" id="btnZ" value="Z" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Z</button>
+    </div>
+
+    <div class="themes-container animated">
+        <p class="themes-title">THEMES:</p>
+        <button class="btn btnThemes" id="originalTheme" value="original" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Original</button>
+        <button class="btn btnThemes" id="movieTheme" value="movies" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Movies</button>
+        <button class="btn btnThemes" id="gamesTheme" value="games" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Games</button>
+        <button class="btn btnThemes" id="musicTheme" value="music" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Music</button>
+        <button class="btn btnThemes" id="televisionTheme" value="television" onMouseOver="this.style.backgroundColor='grey'" onMouseLeave="this.style.backgroundColor='white'">Television</button>
+    </div>
+
+    <div class="footer">
+        <h4 class="footer-date footer-element"><b>Published on: 09-29-21</b></h4>
+        <h4 class="footer-contact footer-element">Contact Me: <a href="mailto:ryanemcconnell@yahoo.com">ryanemcconnell@yahoo.com</a> / <a href="https://github.com/RyanMcConnell">github.com/RyanMcConnell</a></h4>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
